@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body {
+    background-image: url(../img/fondonegro.jpg);
+    background-size: cover;
+}
+
+
+/* botones */
+
+.wapp {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    border: solid green 1px;
+    border-radius: 5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.telegram {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 4rem;
+    border: blue solid 1px;
+    border-radius: 5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.instagram {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 2rem;
+    border: violet solid 1px;
+    border-radius: 5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+/* INICIO SESION */
+
+
+#arriba {
+    color: whitesmoke;
+}
+
+.boton-sesion {
+    background: none;
+    margin: 0;
+}
+
+.titulo-sesion {
+    color: whitesmoke;
+}
+
+/* HEADER */
+
+button .boton-nav {
+
+    font-size: 14px;
+    padding: 0.25rem 0.4rem;
+}
+
+.boton-nav {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.header-index {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-index img {
+    width: 15rem;
+    height: 15rem;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: whitesmoke;
+    margin: 2rem;
+}
+
+
+
+/* CONTENIDO */
+
+
+main div div div p {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.container-fluid {
+
+    color: whitesmoke;
+    outline: black;
+}
+
+.nav-item {
+    color: whitesmoke;
+}
+
+.navbar-toggler {
+    color: whitesmoke;
+}
+
+.ul-menu li a {
+    color: whitesmoke;
+}
+
+.ul-menu li a:hover {
+    color: rgb(47, 47, 169);
+}
+
+.navbar-toggler-icon {
+    border: solid whitesmoke 2px;
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    outline: none;
+
+}
+
+.main-menu {
+    padding: 2rem;
+}
+
+
+/* CELULAR */
+
+.div-ventauno {
+    display: none;
+}
+
+.img-tamaño {
+    height: 15rem;
+    width: 15rem;
+}
+
+
+
+/* TABLET */
+
+@media screen and (min-width:600px) {
+
+    .img-tamaño {
+        object-fit: cover;
+        height: 25rem;
+        width: 30rem;
+    }
+
+    .menu-productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .menu-noticias div img {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .div-torneos{
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .torneos div div iframe{
+        width: 23rem;
+        height: 20rem;
+    }
+
+
+}
+
+
+/* COMPU */
+
+.titulo-paletas {
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(47, 47, 169);
+    border-radius: 2rem;
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .div-ventauno {
+        display: block;
+    }
+
+    .imgventa .img-wilson,
+    .img-couch,
+    p {
+        display: block;
+    }
+
+    .img-tamaño {
+        height: 40rem;
+        width: 35rem;
+    }
+
+    .menu-productos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .menu-noticias div img {
+        width: 45rem;
+        height: 25rem;
+    }
+
+    .torneos div div iframe{
+        width: 40rem;
+        height: 23rem;
+    }
+
+
+}
+
+
+/* MENU COMPRAS PALAS Y COUCH */
+
+
+
+/* paletas, les dejo el borde, pensar despues. */
+.imgventa {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+
+
+.div-paleta div img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.div-paleta a {
+    text-decoration: none;
+}
+
+.div-paleta p:hover {
+    color: rgb(10, 10, 89)
+}
+
+.card-img-top {
+    transition: all 0.5s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+/* TIENDA */
+
+.menu-productos {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15rem;
+}
+
+.titulo-pala {
+    font-size: large;
+    text-align: center;
+}
+
+.boton-compra {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* NOTICIAS */
+
+.menu-noticias {
+    display: flex;
+    flex-direction: column;
+}
+
+.span {
+    color: red;
+}
+
+.menu-noticias div img {
+    border-radius: 0.5rem;
+}
+
+.noti-volveralinicio {
+    display: flex;
+    justify-content: center;
+
+}
+
+.noti-volveralinicio a {
+    margin: 1rem;
+    background-color: rgb(57, 54, 54);
+    border: solid rgb(45, 44, 44) 1px;
+    border-radius: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+/* TAPIA COELLO */
+
+.noticia-tapiacoello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: justify;
+
+}
+
+.noti-img-tapia {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 1rem 1rem;
+    width: 20rem;
+    height: 15rem;
+}
+
+/* LEBRON GALAN */
+
+.noticia-lebrongalan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: justify;
+
+}
+
+.noti-img-lebron {
+    margin: 1rem 1rem 1rem;
+    width: 23rem;
+    height: 15rem;
+}
+
+/* STUPA DI NENNO */
+
+.noticia-stupadinenno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: justify;
+
+}
+
+.noti-img-stupa {
+    margin: 1rem 1rem 1rem;
+    width: 23rem;
+    height: 15rem;
+
+}
+
+/* SANYO */
+
+.noticia-sanyo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+    color: whitesmoke;
+    border: solid 1px whitesmoke;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.noti-img-sanyo {
+    margin: 1rem 1rem 1rem;
+    width: 23rem;
+    height: 15rem;
+
+}
+
+/* TORNEOS */
+
+/* TORNEO BRUSELAS */
+
+.torneos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.torneos div {
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+.torneos-video {
+    width: 23rem;
+    height: 15rem;
+}
+
+.torneos div div iframe{
+    border-radius: 1rem;
+}
+
+/* CONTACTO */
+
+
+
+.contacto-textarea{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.contacto-titulo{
+    color: whitesmoke;
+    font-size: large;
+    text-align: center;
+}
+
+.contacto-botones{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.3rem;
+}
+
+.contacto-boton{
+    padding: 0.3rem;
+    background-color: rgb(45, 44, 44);
+    color: whitesmoke;
+    border-radius: 1rem;
+}
+
